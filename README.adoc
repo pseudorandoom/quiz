@@ -14,7 +14,7 @@ Optionally
 
 Running
 ~~~~~~~
-Commands assumes you are in the project folder.
+Commands assume you are in the project folder.
 
 With java
 [source,bash]
