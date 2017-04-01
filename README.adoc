@@ -26,9 +26,8 @@ install jdk 8 you can run it within a docker container
 
 [source, bash]
 ----
-docker run -rm -p 8080:8080 -v "$PWD":/quiz -ti openjdk:8u121-alpine cd /quiz;./gradlew clean bootRun
+docker run -rm -p 8080:8080 -v "$PWD":/quiz -ti openjdk:8u121-alpine cd /quiz;./mvnw clean spring-boot:run
 ----
-
 
 Example Invocation
 ~~~~~~~~~~~~~~~~~~
