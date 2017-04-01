@@ -1,0 +1,25 @@
+Quiz Project
+------------
+
+Rest API exposing a JSON endpoint in the _/v1/messages_ path
+
+Requisites
+~~~~~~~~~~
+
+* Java 1.8
+* Gradle
+
+Running
+~~~~~~~
+[source,bash]
+----
+gradle bootRun
+----
+
+Example Invocation
+~~~~~~~~~~~~~~~~~~
+
+[source,bash]
+----
+curl localhost:8080/v1/messages/id
+----
