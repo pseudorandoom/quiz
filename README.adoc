@@ -7,14 +7,28 @@ Requisites
 ~~~~~~~~~~
 
 * Java 1.8
-* Gradle
+
+Optionally
+
+* Docker
 
 Running
 ~~~~~~~
+Commands assumes you are in the project folder.
+
+With java
 [source,bash]
 ----
-gradle bootRun
+./gradlew bootRun
 ----
+With Docker: if for some reason you can't or don't want to
+install jdk 8 you can run it within a docker container
+
+[source, bash]
+----
+docker run -p 8080:8080 -v "$PWD":/quiz -ti openjdk:8u121-alpine cd /quiz;./gradlew clean bootRun
+----
+
 
 Example Invocation
 ~~~~~~~~~~~~~~~~~~
@@ -23,3 +37,4 @@ Example Invocation
 ----
 curl localhost:8080/v1/messages/id
 ----
+or go to http://localhost:8080/v1/messages/id[^]
